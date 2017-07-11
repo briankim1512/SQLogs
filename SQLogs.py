@@ -38,3 +38,5 @@ print("\n")
 print("On which days did more than 1% of requests lead to errors?\n")
 print("\n")
 # Insert answer 3
+# select extract(day from time) as date, count(*) as num from log
+# where status!='200 OK' group by date order by date desc
