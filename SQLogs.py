@@ -35,25 +35,25 @@ db.close()
 print("What are the most popular three articles of all time?\n")
 
 for i in range(0, 3):
-    print("#"+str(i+1)+" article name is "+answer1[i][0]+". "+\
-    "It has been accessed "+str(answer1[i][1])+" times")
+    print("#" + str(i+1) + " article name is " + answer1[i][0] + ". " +
+          "It has been accessed "+str(answer1[i][1])+" times")
 print("\n")
 
 # Question 2
 print("Who are the most popular article authors of all time?\n")
 
 for i in range(0, len(answer2)):
-    print("#"+str(i+1)+" author name is "+answer2[i][0]+". "+\
-    "This author has had "+str(answer2[i][1])+" views")
+    print("#" + str(i+1) + " author name is " + answer2[i][0] + ". " +
+          "This author has had "+str(answer2[i][1])+" views")
 print("\n")
 
 # Question 3
 print("On which days did more than 1% of requests lead to errors?\n")
 
 for i in range(0, len(answer3)):
-    print("On the date "+str(int(answer3[i][0]))+"-"\
-    +str(int(answer3[i][1]))+"-"+str(int(answer3[i][2]))+", "\
-    +str(answer3[i][3])+"% of the "+\
-    "requests lead to errors.")
+    print("On the date "+str(int(answer3[i][0]))+"-" +
+          str(int(answer3[i][1])) + "-" + str(int(answer3[i][2])) + ", " +
+          str(answer3[i][3]) + "% of the " +
+          "requests lead to errors.")
 
 print("\n")
