@@ -29,3 +29,7 @@ This program SQLogs will be able to find the following questions from the "news"
 3:On which days did more than 1% of requests lead to errors?
 
 The program will return these statements in a readable fashion for any viewer to understand regardless of prior programmingexperience or not.
+
+To run the program, open the folder in terminal and run this command:
+python3 SQLogs.py
+The output should answer those aforementioned questions.
