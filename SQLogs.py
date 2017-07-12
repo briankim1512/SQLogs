@@ -57,6 +57,3 @@ for i in range(0, len(answer3)):
     "requests lead to errors.")
 
 print("\n")
-# Insert answer 3
-# select extract(day from time) as date, count(*) as num from log
-# where status!='200 OK' group by date order by date desc
