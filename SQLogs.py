@@ -1,4 +1,4 @@
-# Python3
+#!/usr/bin/env python3
 # Initial import for necessary modules
 import psycopg2
 
@@ -9,7 +9,7 @@ c = db.cursor()
 # Answer question 1
 c.execute("select title, count(*) as num from log join articles on \
             substring(path, 10, length(path))=slug group by title \
-            order by num desc limit 3 offset 1;")
+            order by num desc limit 3;")
 answer1 = c.fetchall()
 
 # Answer question 2

@@ -1,8 +1,8 @@
 What are the most popular three articles of all time?
 
-#1 article name is Bears love berries, alleges bear. It has been accessed 253801 times
-#2 article name is Bad things gone, say good people. It has been accessed 170098 times
-#3 article name is Goats eat Google's lawn. It has been accessed 84906 times
+#1 article name is Candidate is jerk, alleges rival. It has been accessed 338647 times
+#2 article name is Bears love berries, alleges bear. It has been accessed 253801 times
+#3 article name is Bad things gone, say good people. It has been accessed 170098 times
 
 
 Who are the most popular article authors of all time?
