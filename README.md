@@ -18,6 +18,8 @@ http://postgresguide.com/setup/install.html
 The news database is given by the admin of such database.
 The original code was written from the database given by Udacity on:
 2017-07-10
+You must import the news database by using the following code:
+psql -d news -f newsdata.sql
 The news database may have changed from then. Regardless, the code will
 (should) run without fault.
 
