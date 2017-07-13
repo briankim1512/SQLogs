@@ -20,11 +20,11 @@ c.execute("select authors.name, count(*) as num from authors join \
 answer2 = c.fetchall()
 
 # Answer question 3
-c.execute("select * from (select extract(year from time) as year, \
-            extract(month from time) as month, extract(day from time) \
-            as day, (count(case status when '200 OK' then null else 1 \
-            end)*100.0/(count(status))) as perc from log group by day, \
-            month, year order by day desc) as temp where perc > 1;")
+c.execute("select to_char(date, 'YYYY-MM-DD'), perc from (select \
+            date_trunc('day', time) as date, round(count(case \
+            status when '200 OK' then null else 1 end) * 100.0 / \
+            (count(status)), 2) as perc from log group by date order \
+            by date asc) as temp where perc > 1;")
 answer3 = c.fetchall()
 
 # Close connection
@@ -51,9 +51,6 @@ print("\n")
 print("On which days did more than 1% of requests lead to errors?\n")
 
 for i in range(0, len(answer3)):
-    print("On the date "+str(int(answer3[i][0]))+"-" +
-          str(int(answer3[i][1])) + "-" + str(int(answer3[i][2])) + ", " +
-          str(answer3[i][3]) + "% of the " +
-          "requests lead to errors.")
-
+    print("On the date " + str(answer3[i][0]) + ", " + str(answer3[i][1]) +
+          "% of the " + "requests lead to errors.")
 print("\n")
